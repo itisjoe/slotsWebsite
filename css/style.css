@@ -15,6 +15,10 @@ li {
     text-align: center;
 }
 
+.clearFloat {
+    clear: both;
+}
+
 /*
     section0
     setting
@@ -30,7 +34,7 @@ li {
 #settingBox,#deleteResultBox,#goToSlotBox {
     margin: 0 auto;
     text-align: left;
-    width:50%;
+    width:80%;
     background: #333333;
     padding:10pt;
 }
@@ -55,7 +59,7 @@ li {
 }
 
 #randomEnd, #randomStart {
-    width: 100pt;
+    width: 80pt;
 }
 
 #updateSetting, #goToSlot {
@@ -84,6 +88,12 @@ li {
     text-align: center;
     word-wrap:break-word;
     overflow:hidden;
+}
+
+#resultBox div {
+    float:left;
+    width:15%;
+    text-align: center;
 }
 
 #section1 h2 {
@@ -119,6 +129,7 @@ li {
     padding:10pt;
 }
 
-#goBtn a, #goBtn a:link, #goBtn a:visited, #goBtn a:hover, #goBtn a:active{
+a#goBtn, a#goBtn:link, a#goBtn:visited, a#goBtn:hover, a#goBtn:active{
     color: #fff;
+    text-decoration: none;
 }

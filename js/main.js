@@ -18,7 +18,18 @@ function padLeft(str,lenght){
 function udpateResult(resultArr){
     var str = resultArr.join(",");
     $.cookie('result',str);
-    $('#resultBox').html(str);
+    appendResult(str);
+}
+
+function appendResult(resultStr){
+    var arr = resultStr.split(",");
+    var l = arr.length;
+    $('#resultBox').html("");
+    if ( l > 0) {
+        for(var i=0;i<l;i++) {
+            $('#resultBox').append('<div>'+arr[i]+'</div>');
+        }
+    }
 }
 
 function deleteResult() {
@@ -52,7 +63,8 @@ $(document).ready(function(){
     $('#textBackgroundColor').val(slotInfo.textBackgroundColor);
     $('li').css('color',slotInfo.textColor);
     $('li').css('backgroundColor',slotInfo.textBackgroundColor);
-    $('#resultBox').html(result).css('color',slotInfo.textColor);
+    appendResult(result);
+    $('#resultBox').css('color',slotInfo.textColor);
 
     // update setting
     $('#updateSetting').click(function(){
