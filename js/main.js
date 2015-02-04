@@ -101,6 +101,11 @@ $(document).ready(function(){
         location.reload();
         
     });
+    
+    // switch page to slot
+    $("#goToSlot").click(function(){
+        $.fn.fullpage.moveTo(3);
+    });
 
     // go slots
     $('#goBtn').click(function(){
@@ -142,7 +147,7 @@ $(document).ready(function(){
         }
     });
 
-     $('#fullpage').fullpage({
+    $('#fullpage').fullpage({
         sectionsColor: ['#000000', slotInfo.backgroundColor, slotInfo.backgroundColor],
         anchors: ['setting', 'result', 'slots'],
         scrollingSpeed: 500

@@ -27,7 +27,7 @@ li {
     
 }
 
-#settingBox,#deleteResultBox {
+#settingBox,#deleteResultBox,#goToSlotBox {
     margin: 0 auto;
     text-align: left;
     width:50%;
@@ -35,7 +35,7 @@ li {
     padding:10pt;
 }
 
-#deleteResultBox {
+#deleteResultBox,#goToSlotBox {
     margin-top: 20pt;
     padding:20pt;
 }
@@ -58,7 +58,7 @@ li {
     width: 100pt;
 }
 
-#updateSetting {
+#updateSetting, #goToSlot {
     display: block;
     margin: 0 auto;
 }
@@ -67,7 +67,7 @@ li {
     float: right;
 }
 
-#randomEnd, #randomStart ,#updateSetting, #sec {
+#randomEnd, #randomStart ,#updateSetting, #goToSlot, #sec {
     color: #000;
 }
 
