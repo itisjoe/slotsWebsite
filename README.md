@@ -2,7 +2,7 @@
 
 線上抽獎機
 
-[http://hsin.tw/tools/slots](http://hsin.tw/tools/slots)
+[http://itisjoe.github.io/slotsWebsite](http://itisjoe.github.io/slotsWebsite)
 
 
 ## Used Tools
