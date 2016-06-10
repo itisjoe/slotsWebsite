@@ -74,10 +74,10 @@ $(document).ready(function(){
         var textBackgroundColor = '#000000';
         // number range
         if ($('#randomStart').val() > 0) {
-            randomStart = $('#randomStart').val();
+            randomStart = parseInt($('#randomStart').val(),10);
         }
         if ($('#randomEnd').val() > 0) {
-            randomEnd = $('#randomEnd').val();
+            randomEnd = parseInt($('#randomEnd').val(),10);
         }
         if (randomStart > randomEnd) {
             randomEnd = randomStart * 1 + 1;
